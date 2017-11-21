@@ -1,0 +1,290 @@
+// .grid{    margin: 0 auto;}
+.card {
+    border-radius: 2px!important;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.32);
+    border: none!important;
+    float: left;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    background:white;
+    margin-right:20px;
+    transition:box-shadow .4s ease;
+    >img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .inside{
+        padding: 8px;
+        overflow: hidden;
+        font-weight: 600;   
+        border-top: 1px solid #ddd;         
+        .text-uppercase{
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            color:black;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+        }
+        .info{
+            font-size: 13px;
+            margin-bottom: 6px;
+            color:$dark-grey;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            span{
+                color:$grey;
+            }
+        }
+    }
+    .link{
+        padding: 8px;
+        line-height: 0px;
+        background-color: #fafafa;
+        border-radius: 0 0 2px 2px;
+        i{
+            margin-right:5px;
+        }
+    }
+    .inside2{
+        padding: 8px 32px;
+        overflow: hidden;
+        font-weight: 600;   
+        border-top: 1px solid #ddd;         
+        .info{
+            font-size: 12px;
+            margin-bottom: 6px;
+            color:$dark-grey;
+            white-space: nowrap;
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            span{
+                color:$grey;
+            }
+        }
+    }
+    .link{
+        padding: 8px;
+        line-height: 0px;
+        background-color: #fafafa;
+        border-radius: 0 0 2px 2px;
+        height:30px;
+        i{
+            margin-right:5px;
+        }
+    }
+    
+}
+.card:hover{
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+    box-shadow: 0px 1px 20px 0px rgba(90,207,181,0.8);
+}
+.shop-img{
+    // height: 100px;
+    // display: flex;
+    // vertical-align: middle;
+    // justify-content: center;
+    // align-items: center;
+    >img{
+        width:200px;
+        height:100px;
+    }
+}
+.card-header{
+    width: 230px;
+    height: 61px;
+    border-radius: 2px 2px 0 0;
+    .user-image{
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin: 8px;
+        border: 2px solid $green;
+    }
+    .pull-left{
+        color:$dark-grey;
+        font-weight:600;
+        .text-uppercase{
+            margin-top:4px;
+        }
+        .department{
+            font-size:12px;
+        }
+    }
+}
+.card-voucher-issued>.info{margin-bottom:3px!important;}
+
+
+
+
+
+
+
+.card1{width:200px;height:290px;}
+.card-height1{height:160px;}
+.card2{width:200px;}
+.card3{width: 230px;height: 230px;}
+.card4{width: 230px;}
+.card5{width: 360px;height:210px;margin-bottom:60px;}
+.card6{width: 225px;height:260px;margin-bottom:60px;}
+.card7{width: 250px;height:220px;}
+.card8{width: 250px;height: 180px;}
+.watermark{
+    position: absolute;
+    opacity: .54;
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    pointer-events:none;
+}
+.watermark-image1 {   
+    top: 81px;
+    right: 30px;
+    width: 70%;   
+}
+.watermark-image2 {
+    top: 90px;
+    right: 55px;
+    width: 45%;
+} 
+.watermark-image3 {
+    top: 45px;
+    right: 64px;
+    width: 46%;
+}
+.watermark-image4 {
+    top: 49px;
+    right: 76px;
+    width: 35%;
+}   
+.watermark-image-vc {
+    top: -20px;
+    right: 34px;
+    width: 70%;
+}
+.watermark-image-scanning{
+    top: -6px;
+    right: 150px;
+    width: 30%;
+}
+.carpark-stamp{    
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background:url(../img/carpark.png);
+    width:40px;
+    height:40px;
+    background-repeat: no-repeat;
+}
+
+
+.voucher-management-front{
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height:220px;
+    .card-vm{
+        width: 220px;
+        height: 135px;
+        border-radius:2px;    
+        border:1px solid #ddd;  
+        .vm-left{
+            width:148px;height:133px;background:#fafafa;float:left;padding:5px;
+            .vm1{
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 30px;
+            }
+            .vm2{
+                margin-top: 5px;
+                font-weight: 600;
+            }
+            .vm3{
+                font-size: 8px;
+                margin-top: 5px;
+            }
+            .bc{
+                float: left;
+                margin-top: 5px;
+            }
+            .vm4{
+                font-size: 9px;
+                float: left;
+            }
+        }
+        .vm-right{
+            width:70px;
+            height:135px;
+            float:right;
+            padding:5px;
+            .sc1{margin-top:5px;}
+            .sc2{font-size:4px;margin-top:2px;text-align: left;}
+            .sc4{
+                font-size:8px;
+                border:1px solid #ddd;
+                text-align:center;
+            }
+            .sc5{font-size:4px;margin-top:2px;text-align: center;}
+        }
+    }
+    .card-e{
+        width: 150px;
+        height: 170px;
+        border:1px solid #ddd;
+        border-radius:2px;
+        .card-e-contain{
+            height:110px;
+            color:white;
+            padding:10px;
+            border-radius:2px 2px 0 0;
+            .card-e1{
+                font-size:36px;
+                font-weight:500;
+            }
+        }
+        .card-e-img{
+            height: 60px;
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            >img{
+                height:60px;
+            }
+        }
+    }
+}
+
+.voucher-management-front2{
+    display: flex;
+    background: #f4f4f4;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    height:180px;
+}
+.voucher-management-title {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:8px;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    border-radius:2px;
+}
+.voucher-management-title2 {
+    background: $green;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding:8px
+}

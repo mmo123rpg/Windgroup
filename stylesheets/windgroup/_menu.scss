@@ -1,0 +1,196 @@
+.mainwrapper {
+    position: relative;
+}
+.leftpanel{    
+display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav-admin{display:none}
+@media (min-width: 768px){
+    .mainwrapper, .mainpanel {
+        border-left: 1px solid #eaeaea;
+        min-height:530px;
+    }
+    .leftpanel {
+    width: 230px;
+    display:block;
+    }
+    .mainpanel {
+        margin-left: 230px;
+        overflow:hidden;
+    }
+    .top16{margin-top:16px;}
+    .mainwrapper.collapsed .leftpanel {width: 48px;}
+    .mainwrapper.collapsed .mainpanel {margin-left: 48px;}
+    .nav-admin{display:block}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////
+//MENU-ICON   /////////////////////
+//////////////////////////////////
+.menu-img{background-repeat: no-repeat;background-position: center center;width:20px;height:20px;float:left;margin-right: 12px;margin-top:3px;background-size: 20px 20px;margin-left:2px;}
+
+.img-home-1{background-image: url(../img/Icon-01.png)}
+.nav-stacked li:hover .img-home-1,.img-home-2{background-image: url(../img/Icon-02.png)}
+
+.img-voucher-1{background-image: url(../img/Icon-03.png)}
+.nav-stacked li:hover .img-voucher-1,.img-voucher-2 {background-image: url(../img/Icon-04.png)}
+
+.img-shop-1{background-image: url(../img/Icon-05.png)}
+.nav-stacked li:hover .img-shop-1,.img-shop-2 {background-image: url(../img/Icon-06.png)}
+
+.img-user-1{background-image: url(../img/Icon-07.png)}
+.nav-stacked li:hover .img-user-1,.img-user-2 {background-image: url(../img/Icon-08.png)}
+
+.img-finance-1{background-image: url(../img/Icon-09.png)}
+.nav-stacked li:hover .img-finance-1,.img-finance-2 {background-image: url(../img/Icon-10.png)}
+
+.img-feedback-1{background-image: url(../img/Icon-11.png)}
+.nav-stacked li:hover .img-feedback-1,.img-feedback-2 {background-image: url(../img/Icon-12.png)}
+
+.img-customer-service-1{background-image: url(../img/Icon-13.png)}
+.nav-stacked li:hover .img-customer-service-1,.img-customer-service-2,.nav-stacked li.open .img-customer-service-1{background-image: url(../img/Icon-14.png)}
+
+.img-inventory-1{background-image: url(../img/Icon-15.png)}
+.nav-stacked li:hover .img-inventory-1,.img-inventory-2,.nav-stacked li.open .img-inventory-1{background-image: url(../img/Icon-16.png)}
+
+.img-report-1{background-image: url(../img/Icon-17.png)}
+.nav-stacked li:hover .img-report-1,.img-report-2,.nav-stacked li.open .img-report-1{background-image: url(../img/Icon-18.png)}
+
+.img-dashboard-1{background-image: url(../img/Icon-19.png)}
+.nav-stacked li:hover .img-dashboard-1,.img-dashboard-2,.nav-stacked li.open .img-dashboard-1{background-image: url(../img/Icon-20.png)}
+
+//////////////////////////////////
+////////MENU-LEFT/////////////////
+/////////////////////////////////
+.mainwrapper.collapsed .nav-stacked > li > a, .mainwrapper .nav-stacked > li > a, .cbp-spmenu>li>a{
+    height: 48px;
+    padding:12px;
+}
+.mainwrapper .menu-collapse .hamberger {
+    float: left;
+}
+.mainwrapper .menu-collapse .hamberger i {
+    margin-left: 5px;
+    color: #555;
+    margin-right: 12px;
+}
+.mainwrapper .menu-collapse .hamberger i:before {
+    content: "\f100";
+}
+// .leftpanel li.active,.leftpanel li:hover > a, .cbp-spmenu li:hover>a{
+//     background: $green;
+// }
+.mainwrapper li:hover a span, .mainwrapper li.active a span,.mainwrapper li.menu-collapse:hover .hamberger i,
+.cbp-spmenu >li:hover >a >span,.cbp-spmenu >li:focus >a >span{
+    color: $green;
+}
+.mainwrapper .leftpanel li.dropdown a i, .cbp-spmenu >li >a >i{
+    position: absolute;
+    right: 3px;
+    top: 15px;
+    }
+.nav-stacked>li+li {
+    margin: 0;
+}
+.mainwrapper>.leftpanel>.nav-stacked>li>a>span,.cbp-spmenu >li >a >span{
+    font-weight: 400;
+    color: #555;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
+
+
+
+
+////////////////////////////////////
+//////////COLLAPSED/////////////////
+///////////////////////////////////
+.mainwrapper.collapsed .menu-collapse .hamberger i:before{
+    content: "\f101";
+    }
+.mainwrapper.collapsed > .leftpanel > .nav-stacked > li > a > span{
+    display: none;
+}
+
+
+
+
+
+
+/* General styles for all menus */
+.cbp-spmenu {
+    background: white;
+    position: fixed;
+}
+.cbp-spmenu > li.dropdown > ul.nav{display:none;background:#f2f2f2}
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+    left: -240px;
+    border-right:1px solid #f2f2f2;   
+     -webkit-transition: all .5s ease;
+    transition:all .5s ease;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+    left: 0px; 
+}
+
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    -webkit-transition: all .5s ease;
+    transition:left .5s ease;
+}
+
+.cbp-spmenu-push-toright {
+    left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+    left: -240px;
+}
+
+@media (min-width: 768px){
+    .cbp-spmenu{display:none;}
+    .cbp-spmenu-push-toright{left:0px!important;}
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V-aap</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body class="background cbp-spmenu-push">
+
+  <nav>
+    <ul class="nav cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left nav-stacked" id="cbp-spmenu-s1">
+      <li><a href="home.html"><div class="menu-img img-home-2"></div></span><span>Home</span></a></li>
+      <li><a href="shop-management.html"><div class="menu-img img-shop-2"></div><span>Shop Management</span></a></li>
+      <li><a href="user-management.html"><div class="menu-img img-user-2"></div><span>User Management</span></a></li>     
+      <li><a href="finance-management.html"><div class="menu-img img-finance-2"></div><span>Finance Management</span></a> </li>               
+      <li><a href="voucher-management.html"><div class="menu-img img-voucher-2"></div><span>Voucher Management</span></a> </li>
+      <li class="dropdown">
+        <a href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <div class="menu-img img-customer-service-2"></div>
+          <span>Customer Service</span>  
+          <i class="fa fa-angle-down"></i>           
+        </a>
+         <ul class="nav">
+          <li><a href="purchase-voucher.html">Purchase Voucher</a></li>
+          <li><a href="#">Member</a></li>
+          <li><a href="reprint.html">Reprint Transaction Receipt</a></li>
+          <li><a href="void-voucher.html">Void Voucher</a></li>
+        </ul>
+      </li>
+      <li><a href="feedback.html"><div class="menu-img img-feedback-2"></div><span>Feedback</span></a></li>
+      <li><hr></li>
+      <li class="dropdown">
+        <a href="#"><span>serene.ng@windgroup.com</span><i class="fa fa-angle-down"></i> </a>
+        <ul class="nav">
+          <li><a href="#" data-toggle="modal" data-target="#update-profile">Update Profile</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#change-pass">Change Password</a></li>   
+        </ul>
+      </li>
+      <li><a href="index.html"><span>Logout</span></a></li>
+    </ul>
+  </nav>
+
+
+
+
+    <nav class="navbar navbar-default">
+      <div class="container2">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" id="showLeftPush" style="float:left">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html"><img class="logo" src="img/logo.png" width="200px" style="margin-top:8px"></a>
+          </div>
+  
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <ul class="nav navbar-nav navbar-right nav-admin">
+            <li role="presentation" class="dropdown">
+              <a id="dLabel"data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">serene.ng@windgroup.com  <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#update-profile">Update Profile</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#change-pass">Change Password</a></li>      
+              </ul>
+            </li>
+            <li><a href="index.html">Logout</a></li>         
+          </ul>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+
+<div class="container2">
+  <div class="row shadow">
+    <div class="mainwrapper">
+      <div class="leftpanel">
+        <ul class="nav nav-stacked">
+          <li class="menu-collapse"><a href="#"><div class="hamberger"><i class="fa fa-2x"></i></div><span>Menu</span></a></li>
+          <li><a href="home.html"><div class="menu-img img-home-1"></div></span><span>Home</span></a></li>
+          <li><a href="shop-management.html"><div class="menu-img img-shop-1"></div><span>Shop Management</span></a></li>
+          <li><a href="user-management.html"><div class="menu-img img-user-1"></div><span>User Management</span></a></li>     
+          <li><a href="finance-management.html"><div class="menu-img img-finance-1"></div><span>Finance Management</span></a> </li>               
+          <li><a href="voucher-management.html"><div class="menu-img img-voucher-1"></div><span>Voucher Management</span></a> </li>
+          <li class="active dropdown">
+            <a href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <div class="menu-img img-customer-service-2"></div>
+              <span>Customer Service</span>  
+              <i class="fa fa-angle-right"></i>           
+            </a>
+             <ul class="dropdown-menu dropdown-left dropdown-menu-left" aria-labelledby="dropdownMenu1">
+              <li><a href="purchase-voucher.html">Purchase Voucher</a></li>
+              <li><a href="#">Member</a></li>
+              <li><a href="reprint.html">Reprint Transaction Receipt</a></li>
+              <li><a href="void-voucher.html">Void Voucher</a></li>  
+            </ul>
+          </li>
+          <li><a href="feedback.html"><div class="menu-img img-feedback-1"></div><span>Feedback</span></a></li>
+        </ul>
+      </div>
+      <div class="mainpanel">
+          <div class="title" style="border-bottom:1px solid #ddd">Customer Service - Void Voucher</div>
+        <nav role="navigation">
+          <div class="navbar-header">
+            <button type="btn" class="navbar-toggle btn-view" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+              <i class="fa fa-search fa-15x"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+              <div class="col-sm-12">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <select class="form-control placeholder">
+                     <option default>Action</option>
+                     <option>All</option>
+                     <option>Void</option>
+                     <option>Transfer</option>
+                     <option>Extend</option>
+                     <option>Validate</option>
+                    </select>
+                  </div>
+                  <div class="form-group"><input type="text" class="form-control" placeholder="Serial number from"></div>
+                  <div class="form-group"><input type="text" class="form-control" placeholder="Serial number to"></div>
+                  <button type="submit" class="btn btn-blue btn-min">Void</button>
+                  <div class="form-group">
+                    <input type="text" class="form-control input-search">
+                  </div>
+                 <button type="submit" class="btn btn-green" data-placement="bottom" data-tooltip="true" data-original-title="Refresh"><i class="fa fa-refresh"></i></button>              
+                </div>
+              </div>
+          </div>
+        </nav>
+        <div class="home-content">
+          <div class="table-responsive">
+            <table class="table table-striped table-hover dataTable" cellspacing="0" width="100%"> 
+              <thead>
+                <tr>
+                  <th>Serial Number</th>
+                  <th class="hidden-col">Datetime</th>
+                  <th class="hidden-col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+                <tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr><tr>
+                  <td>FE000000XXXXXXXXX</td>
+                  <td class="hidden-col">12/1/2016 12:10:05</td>
+                  <td class="hidden-col">Void</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <footer>
+      <div class="container2">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="copyright">@ Managed by WIND Group Pte. Ltd.</div>
+          </div>
+          <div class="col-sm-8">
+            <div class="footer-right">
+              <ul class="nav nav-pills nav-justified">
+                <li><a href="find.html" target="_blank">About V-aap</a></li>
+                <li><a href="faq.html" target="_blank">FAQ</a></li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li><a href="term.html" target="_blank">Terms and Conditions</a></li>
+                <li><a href="policy.html" target="_blank">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </footer> 
+
+
+<!-- Modal Change Password -->
+<div class="modal fade" id="change-pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog modal-500 vertical-align-center" role="document">
+      <div class="modal-content">
+        <a class="forget_close" data-dismiss="modal" aria-label="Close"></a>  
+        <div class="text-center modal-title">Change Password</div> 
+          <div class="tab-pane modal-padding">
+            <div class="form-horizontal">        
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Current Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="New Password" >
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Confirm Password">
+                </div>
+              </div>                                    
+            </div>                  
+            <div class="text-center"> 
+              <a data-dismiss="modal" aria-label="Close" class="btn btn-green btn-min">Submit</a>
+              <a class="btn btn-cancel btn-min" data-dismiss="modal" aria-label="Close">Cancel</a>  
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Update Profile -->
+<div class="modal fade" id="update-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="vertical-alignment-helper">
+    <div class="modal-dialog modal-sm vertical-align-center" role="document">
+      <div class="modal-content">
+        <a class="forget_close" data-dismiss="modal" aria-label="Close"></a>  
+        <div class="text-center modal-title">Update Profile</div>
+          <div class="tab-pane modal-padding">
+            <div class="form-horizontal">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Email" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Company Name" disabled>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-ph-6">
+                  <select class="form-control">
+                  <option>Singapore (+65)</option>
+                  <option>Malaysia (+60)</option>
+                  <option>China (+86)</option>
+                </select> 
+                </div>
+                <div class="col-ph-6 form-margin">
+                  <input type="text" class="form-control" placeholder="Contact Number">
+                </div>
+              </div>                 
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <select class="form-control placeholder">
+                  <option default>Department</option>
+                  <option>HQ & Corp</option>
+                  <option>Finance</option>
+                  <option>Purchasing</option>
+                  <option>Marketing</option>
+                  <option>HR</option>
+                  <option>Admin</option>
+                  <option>Others</option>
+                </select>
+                </div>
+              </div>                  
+              <div class="form-group">
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control" placeholder="Title">
+                  </div>
+              </div>  
+            </div>                  
+            <div class="text-center"> 
+              <a data-dismiss="modal" aria-label="Close" class="btn btn-green btn-min">Submit</a>
+              <a class="btn btn-cancel btn-min" data-dismiss="modal" aria-label="Close">Cancel</a>  
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/niceScroll.js"></script>
+<script src="js/jquery.bootstrap.wizard.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/custom.js"></script>  
+</body>
+</html>

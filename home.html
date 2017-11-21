@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V-aap</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="background cbp-spmenu-push">
+    <nav>
+        <ul class="nav cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left nav-stacked" id="cbp-spmenu-s1">
+            <li>
+                <a href="home.html">
+                    <div class="menu-img img-home-1"></div>
+                    </span><span>Home</span></a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <div class="menu-img img-dashboard-1"></div><span>Dashboard</span></a>
+            </li>
+            <li>
+                <a href="shop-management.html">
+                    <div class="menu-img img-shop-1"></div><span>Shop Management</span></a>
+            </li>
+            <li>
+                <a href="user-management.html">
+                    <div class="menu-img img-user-1"></div><span>User Management</span></a>
+            </li>
+            <li>
+                <a href="finance-management.html">
+                    <div class="menu-img img-finance-1"></div><span>Finance Management</span></a>
+            </li>
+            <li>
+                <a href="voucher-management.html">
+                    <div class="menu-img img-voucher-1"></div><span>Voucher Management</span></a>
+            </li>
+            <li>
+                <a href="voucher-inventory.html">
+                    <div class="menu-img img-inventory-1"></div><span>Voucher Registration</span></a>
+            </li>
+            <li>
+                <a href="customer-service.html">
+                    <div class="menu-img img-customer-service-1"></div><span>Customer Service</span></a>
+            </li>
+            <li>
+                <a href="feedback.html">
+                    <div class="menu-img img-feedback-1"></div><span>Feedback</span></a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="menu-img img-report-1"></div><span>Report</span></a>
+            </li>
+            <li>
+                <hr>
+            </li>
+            <li class="dropdown">
+                <a href="#"><span>serene.ng@windgroup.com</span><i class="fa fa-angle-down"></i> </a>
+                <ul class="nav">
+                    <li><a href="#" data-toggle="modal" data-target="#update-profile">Update Profile</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#change-pass">Change Password</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html"><span>Logout</span></a></li>
+        </ul>
+    </nav>
+    <nav class="navbar navbar-default">
+        <div class="container2">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" id="showLeftPush" style="float:left">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html"><img class="logo" src="img/logo.png" width="200px" style="margin-top:8px"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <ul class="nav navbar-nav navbar-right nav-admin">
+                    <li role="presentation" class="dropdown">
+                        <a id="dLabel" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">serene.ng@windgroup.com  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" data-toggle="modal" data-target="#update-profile">Update Profile</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#change-pass">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container2">
+        <div class="row shadow">
+            <div class="mainwrapper">
+                <div class="leftpanel">
+                    <ul class="nav nav-stacked">
+                        <li class="menu-collapse">
+                            <a href="#">
+                                <div class="hamberger"><i class="fa fa-2x"></i></div><span>Menu</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="home.html">
+                                <div class="menu-img img-home-1"></div><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-img img-dashboard-1"></div><span>Dashboard</span></a>
+                        </li>
+                        <li>
+                            <a href="shop-management.html">
+                                <div class="menu-img img-shop-1"></div><span>Shop Management</span></a>
+                        </li>
+                        <li>
+                            <a href="user-management.html">
+                                <div class="menu-img img-user-1"></div><span>User Management</span></a>
+                        </li>
+                        <li>
+                            <a href="finance-management.html">
+                                <div class="menu-img img-finance-1"></div><span>Finance Management</span></a>
+                        </li>
+                        <li>
+                            <a href="voucher-management.html">
+                                <div class="menu-img img-voucher-1"></div><span>Voucher Management</span></a>
+                        </li>
+                        <li>
+                            <a href="voucher-inventory.html">
+                                <div class="menu-img img-inventory-1"></div><span>Voucher Registration</span></a>
+                        </li>
+                        <li>
+                            <a href="customer-service.html">
+                                <div class="menu-img img-customer-service-1"></div><span>Customer Service</span></a>
+                        </li>
+                        <li>
+                            <a href="feedback.html">
+                                <div class="menu-img img-feedback-1"></div><span>Feedback</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-img img-report-1"></div><span>Report</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mainpanel">
+                    <div class="item-retailer title">Home</div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#2" aria-controls="2" role="tab" data-toggle="tab">Retailer</a></li>
+                        <li role="presentation"><a href="#1" aria-controls="1" role="tab" data-toggle="tab">Corporate Shopper</a></li>                      
+                        <li role="presentation"><a href="#3" aria-controls="3" role="tab" data-toggle="tab">Mall</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade" id="1">
+                            <div class="home-content footer-content">
+                                <div class="policy-title">Corporate Shopper</div>
+                                <h3>1. Why V-aap?</h3>
+                                <li>Simply because it’s always a pleasure. It is easy and convenient, both for you and your clients.</li>
+                                <h3>2. How to give your clients co-branded V-aap vouchers?</h3>
+                                <li>You can give your clients co-branded V-aap vouchers in the physical paper form if you wish for them to receive something tangible</li>
+                                <li>Or save the earth and give them electronic vouchers. Your clients need only download the vouchers from the V-aap mobile app, which can be found</li>
+                                <div class="app">
+                                    <img src="img/google-play.png" width="200" alt="">
+                                    <img src="img/app-store.png" width="200">
+                                </div>
+                                <div class="height12"></div>
+                                <li>Even if you gave the co-branded V-aap vouchers in paper form, your clients can easily “electronise” or <u>“e” the vouchers via the V-aap mobile app</u></li>
+                                <h3>3. Benefits</h3>
+                                <li>Your clients will enjoy the “e” attributes of V-aap</li>
+                                <li class="left">They will receive reminders to use their co-branded V-aap vouchers when they are near malls or retail outlets, that accept the vouchers</li>
+                                <li>Your clients can change default reminder alerts and receive reminders of voucher expiry dates as an added service.</li>
+                                <li>That way, your goodwill will extend to its fullest when they actually use the vouchers.</li>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade active in" id="2">
+                            <div class="home-content footer-content">
+                                <div class="policy-title">Retailers</div>
+                                <p>Doing business is costly. More so for the smaller, independent retailers.</p>
+                                <p>You want to pull shoppers with customised programmes. You want your brand to stand out with customised programmes; but these are not cost effective.</p>
+                                <p>Switching to V-aap will bring you faster and secure payment and the advantages of economies of scale.</p>
+                                <h3>1. Why V-aap ?</h3>
+                                <p>Simply because it’s always a pleasure.</p>
+                                <h3>2. What V-aap does for you?</h3>
+                                <p>Benefits</p>
+                                <li>Vouchers will be available in both physical and electronic form</li>
+                                <li>Save the earth by issuing in the electronic (e) form. Issue e-vouchers via the V-aap mobile app.</li>
+                                <h3>3. V-aap takes away the administrative headaches and pays you faster</h3>
+                                <li>There is no need for your employees to do daily reconciling, freeing them to focus on sales</li>
+                                <li>V-aap gives you a safe and secure platform</li>
+                                <li>And you get paid faster once the vouchers being redeemed.</li>
+                                <p>A quick summary :</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered wrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Shopper Benefits</th>
+                                                        <th>Retailer Benefits</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Your shoppers will receive reminders to use your Shop’s co-branded V-aap vouchers* when they are near your outlet.</td>
+                                                        <td>You will enjoy push traffic to your stores and enjoy incremental sales.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Your shoppers can change default reminder alerts and receive reminders of voucher* expiry dates as an added service.</td>
+                                                        <td>You will enjoy greater staff productivity by removing the need for handling shoppers‘ requests for extension of voucher validity dates.
+                                                            <br>You will have happy shoppers and the opportunity of upselling.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>That way, your goodwill will extend to its fullest, when they actually use the vouchers.</p>
+                                <p><em>* Applicable to e-vouchers only</em></p>
+                                <div><em>Limitations of liability</em></div>
+                                <div><em>Although stringent control mechanisms are in place, errors on the platform may occur. WIND Group Pte Ltd. is in no way responsible for any damage or loss incurred due to system or process errors. The website contains links to other websites. WIND Group Pte Ltd. is in no way responsible for the content provided on these websites.</em></div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="3">
+                            <div class="home-content footer-content">
+                                <div class="policy-title">Mall Partners</div>
+                                <h3>1. Why V-aap ?</h3>
+                                <p>Simply because it’s always a pleasure.</p>
+                                <h3>2. Benefits</h3>
+                                <p>V-aap frees you to go back to basics. To return to your core business - increase productivity while freeing your staff to focus on what matters - driving sales.</p>
+                                <h3>3. How shoppers can get my Mall co-branded V-aap vouchers?</h3>
+                                <p>Just <u>sign up with us</u>.</p>
+                                <li>Your shoppers can then buy your Mall V-aap vouchers in the <u>physical paper form</u> if they wish to give away something tangible</li>
+                                <li>Your shoppers can also <u>purchase your Mall V-aap electronic vouchers</u>, simply by downloading the vouchers from the V-aap mobile app from</li>
+                                <div class="app">
+                                    <img src="img/google-play.png" width="200" alt="">
+                                    <img src="img/app-store.png" width="200">
+                                </div>
+                                <h3>4. Benefits</h3>
+                                <li>The greater the convenience to the shopper, the lower the rate of attrition.</li>
+                                <li>Your retail partners will also benefit from incremental sales from returning shoppers.</li>
+                                <li>Even if you gave V-AAP in paper form, your shoppers can easily “electronise” or <u>“e” the vouchers on to the V-AAP mobile app</u></li>
+                                <li>Not only do you enjoy the benefits of V-AAP, your shoppers will too</li>
+                                <li>Your shoppers will enjoy the “e” attributes of V-AAP</li>
+                                <p>A quick summary :</p>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered wrap">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Shopper Benefits</th>
+                                                        <th>Mall Owner Benefits</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Your shoppers will receive reminders to use your co-branded Mall V-AAP vouchers* when they are near locations that accept them.</td>
+                                                        <td>You will get push traffic to your retailers. They enjoy incremental sales. You reap the rewards of improved partnership.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Your shoppers can change default reminder alerts and receive reminders of voucher* expiry dates as an added service.</td>
+                                                        <td>You will enjoy greater staff productivity by removing the need for handling shoppers‘ requests for extension of voucher validity dates.
+                                                            <br>You will also have more happy retailers and shoppers!</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><em>* Applicable to e-vouchers only</em></p>
+                                <p>We are here for you, call us at 65- 91234567 or just drop us a line at <a href="" class="link-green"><u>ask@V-aap.com</u></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="copyright">@ Managed by WIND Group Pte. Ltd.</div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="footer-right">
+                        <ul class="nav nav-pills nav-justified">
+                            <li><a href="find.html" target="_blank">About V-aap</a></li>
+                            <li><a href="faq.html" target="_blank">FAQ</a></li>
+                            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                            <li><a href="term.html" target="_blank">Terms and Conditions</a></li>
+                            <li><a href="policy.html" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal Change Password -->
+    <div class="modal fade" id="change-pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-500 vertical-align-center" role="document">
+                <div class="modal-content">
+                    <a class="forget_close" data-dismiss="modal" aria-label="Close"></a>
+                    <div class="text-center modal-title">Change Password</div>
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Current Password" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Current Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="New Password" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="New Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Confirm Password" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Confirm Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a data-dismiss="modal" aria-label="Close" class="btn btn-green btn-min">Submit</a>
+                            <a class="btn btn-cancel btn-min" data-dismiss="modal" aria-label="Close">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Update Profile -->
+    <div class="modal fade" id="update-profile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-sm vertical-align-center" role="document">
+                <div class="modal-content">
+                    <a class="forget_close" data-dismiss="modal" aria-label="Close"></a>
+                    <div class="text-center modal-title">Update Profile</div>
+                    <div class="modal-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Email" disabled data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Company Name" disabled data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Company Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Name" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-ph-6">
+                                    <select class="form-control placeholder" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Country Code">
+                                        <option default>Country Code</option>
+                                        <option>Singapore (+65)</option>
+                                        <option>Malaysia (+60)</option>
+                                        <option>China (+86)</option>
+                                    </select>
+                                </div>
+                                <div class="col-ph-6 form-margin">
+                                    <input type="text" class="form-control" placeholder="Contact Number" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Contact Number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <select class="form-control placeholder" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Department">
+                                        <option default>Department</option>
+                                        <option>HQ & Corp</option>
+                                        <option>Finance</option>
+                                        <option>Purchasing</option>
+                                        <option>Marketing</option>
+                                        <option>HR</option>
+                                        <option>Admin</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <select class="form-control placeholder" data-placement="right" data-trigger="hover" data-tooltip="true" data-original-title="Title">
+                                        <option default>Title</option>
+                                        <option>Management</option>
+                                        <option>Director</option>
+                                        <option>Manager</option>
+                                        <option>Executive</option>
+                                        <option>Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a data-dismiss="modal" aria-label="Close" class="btn btn-green btn-min">Submit</a>
+                            <a class="btn btn-cancel btn-min" data-dismiss="modal" aria-label="Close">Cancel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="retailer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog modal-lg vertical-align-center" role="document">
+                <div class="modal-content">
+                    <a class="forget_close" data-dismiss="modal" aria-label="Close"></a>
+                    <div class="text-center modal-title" style="color:#11b691;">Welcome to V-app!</div>
+                    <div class="text-center">
+                        <p style="font-weight:600;">We're thrilled to have you on board. Please follow these steps to complete your setup.</p>
+                    </div>
+                    <div class="height16"></div>                     
+                    <div class="background">
+                        <img class="img-responsive" src="img/modal.png" alt="" style="margin:0 auto">
+                    </div>
+                    <div class="checkbox checkbox-green checkbox-welcome" style="margin-left:155px;">
+                        <input id="checkbox-welcome" type="checkbox">
+                        <label for="checkbox-welcome">
+                            Do not show this message again.
+                        </label>
+                    </div>
+                    <div class="height16"></div>
+                    <div class="text-center">
+                        <a data-dismiss="modal" aria-label="Close" class="btn btn-green btn-min">Finish</a>
+                    </div>
+                    <div class="height16"></div>                     
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/jquery.flip.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="js/bootstrap-colorselector.js"></script>
+    <script src="js/jquery.typeahead.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/progressButton.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    $(window).load(function(){
+        $('#retailer').modal('show');
+    });
+    </script>
+</body>
+
+</html>
